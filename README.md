@@ -1,2 +1,2 @@
 # Avadoot-Sai-Baba-Temple
-Avadoot Sai Baba Temple Website Code
+Avadoot Sai Baba Temple Website
