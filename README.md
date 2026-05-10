@@ -1,5 +1,83 @@
-# Avadoot Sai Baba Temple
 <!DOCTYPE html>
 <html>
-  Avadoot Sai Baba Temple Website
-</html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+img {
+  display: block;
+  margin: auto;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #133BCF;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #FCFDFF;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="index.html">Home</a>
+  <a href="a.html" class="active">12 Principles of Animation</a>
+  <a href="b.html">Animation in Video Games</a>
+  <a href="c.html">2D and 3D Animation Tips</a>
+  <a href="d.html">References</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div style="padding-left:16px">
+Avadoot Sai Baba Temple Website
