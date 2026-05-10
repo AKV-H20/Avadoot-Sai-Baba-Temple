@@ -1,5 +1,5 @@
 # Avadoot Sai Baba Temple
 <!DOCTYPE html>
 <html>
-  Avadoot Sai Baba Temple
+  Avadoot Sai Baba Temple Website
 </html>
