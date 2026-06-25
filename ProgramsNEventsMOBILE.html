@@ -8,11 +8,10 @@
         body {
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
-            background-color: #FFCC99;
         }
         .topnav {
             overflow: hidden;
-            background-color: #de5656;
+            background-color: #de5656ff;
         }
 
         .topnav a {
@@ -22,7 +21,7 @@
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
-            font-size: 20px; /* Sized down slightly for elegant mobile text fitting */
+            font-size: 25px;
         }
 
         .topnav a:hover {
@@ -39,69 +38,57 @@
             display: none;
         }
 
-        /* FIXED: Swapped typo brace for parenthesis */
-        @media screen and (max-width: 600px) {
-            .topnav a:not(:first-child) { display: none; }
-            .topnav a.icon {
-                float: right;
-                display: block;
-            }
+        @media screen and {max-width: 600px) {
+                           .topnav a:not(:first-child) {display: none;}
+        .topnav a.icon {
+            float: right;
+            display: block;
+        }
         }
 
-        @media screen and (max-width: 600px) {
-            .topnav.responsive { position: relative; }
-            .topnav.responsive .icon {
-                position: absolute;
-                right: 0;
-                top: 0;
-            }
-            .topnav.responsive a {
-                float: none;
-                display: block;
-                text-align: left;
-            }
-        }       
+@media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}       
     </style>
-    <style>
-        .marquee {
-            width: 100%;
-            overflow: hidden;
-            white-space: nowrap;
-            box-sizing: border-box;
-            position: relative;
-            background-color: #B0E0E6;
-            font-family: 'Roboto', sans-serif;
-            font-size: 20px; /* Reduced to look proportions-accurate on mobile screens */
-            padding: 10px 0;
-        }
-        .marquee span {
-            display: inline-block;
-            padding-left: 100%;
-            animation: marquee 25s linear infinite;
-        }
-        @keyframes marquee {
-            0% { transform: translateX(0%); }
-            100% { transform: translateX(-100%); }
-        }
-        
-        .content-padding {
-            padding: 0 16px;
-        }
-        
-        .responsive-img {
-            width: 50%;
-            max-width: 100%;
-            height: auto;
-        }
-        
-        @media screen and (max-width: 600px) {
-            .responsive-img {
-                width: 92%; /* Expands size dynamically so you don't need magnifying glasses on smaller screens */
-            }
-        }
-    </style>
+	<style>
+
+		.marquee {
+			width: 100%;
+			overflow: hidden;
+			white-space: nowrap;
+			box-sizing: border-box;
+			position: relative;
+			background-color: #B0E0E6;
+			font-family: 'Roboto', sans-serif;
+			font-size: 30px;
+			color: black;
+
+		}
+		.marquee span {
+			display: inline-block;
+			padding-left: 100%;
+			animation: marquee 25s linear infinite;
+		}
+		@keyframes marquee {
+			0% { transform: translateX(0%); }
+			 100% { transform: translateX(-100%); }
+			
+		}
+
+			
+	</style>
 </head>
-<body>
+<body style="background-color: #FFCC99;">
     <div class="topnav" id="myTopnav">
         <a href="index.html">Home</a>
         <a href="aboutUs.html">About Us</a>
@@ -112,55 +99,77 @@
         </a>
     </div>
 
-    <div class="marquee">
-        <span>
-            Welcome to the Avadhoot Sai Baba Temple! You are invited to the Baba Prathishta Dinam Event on June 27th, 2026! Check out Temple Programs and Events for more information!
-        </span>
-    </div>
-    
-    <div class="content-padding">
-        <br><br>
-        <h1 align="center">Temple Programs</h1>
-        <p align="center">COMING SOON!</p>
-        <h1 align="center">Temple Events</h1>
+	<div class="marquee">
+		<span>
+			Welcome to the Avadhoot Sai Baba Temple! You are invited to the Baba Prathishta Dinam Event on June 27th, 2026! Check out Temple Programs and Events for more information!
+		</span>
+	</div>
+	
+    <div style="padding-left:16px">
         <br>
-        <div style="text-align: center;">
-            <img src="images/events" class="responsive-img" alt="COME TO OUR EVENT ON 27.06.2026 !">
-        </div>
-        <br><br>
-        
-        <div class="container main-footer" style="background-color: white; padding: 20px; margin-top: 20px; border-radius: 8px;">
-            <div style="text-align: center;">
-                <h2>Contact Us</h2>
-                <p style="font-size: 18px;">Email or Phone us with any questions, comments, or concerns!</p>
-                <p style="font-size: 16px;"><strong>Email:</strong> avadhootsainm@gmail.com</p>
-                <p style="font-size: 16px;"><strong>Phone:</strong> 988-471-0828</p>
-            </div>
-        </div>
-        
         <br>
-        <div class="copyrights-wrapper" style="text-align: center; padding-bottom: 30px;">
-            <small>
-                <a href="https://akv-h20.github.io/Avadoot-Sai-Baba-Temple/index.html" style="color: black; text-decoration: none;">
-                    <strong>Shri Shirdi Avadhoot Sai Baba Spiritual Trust</strong>
-                </a> 
-                <i class="fa fa-copyright"></i> 2026 BUILT BY 
-                <a href="https://akv-h20.github.io/Avadoot-Sai-Baba-Temple/index.html" style="color: black; text-decoration: none;">
-                    <strong>AKV-H20</strong>
-                </a>                                                            
-            </small>
-        </div>
+    <h1 align="center">Temple Programs</h1>
+    <p align="center">COMING SOON!</p>
+    <h1 align="center">Temple Events</h1>
+   <br>
+		<center>
+        <img src="images/events" width="50%" alt="COME TO OUR EVENT ON 27.06.2026 !">
+    </center>
+		<br>
+        <br>
+        <br>
+        <br>
+    <br>
+        <br>
+        <div class="container main-footer">
+						<style data-type="vc_shortcodes-custom-css">.vc_custom_1623155496128{margin-top: -40px !important;margin-bottom: -40px !important;padding-top: 8vh !important;background-color: white !important;}.vc_custom_1620737428908{padding-top: 0px !important;}.vc_custom_1623155585932{margin-bottom: 30px !important;border-bottom-width: 1px !important;padding-bottom: 3vh !important;border-bottom-color: rgba(16,16,16,0.05) !important;border-bottom-style: solid !important;}.vc_custom_1620741201657{padding-top: 0px !important;}.vc_custom_1620741196354{padding-top: 0px !important;}.vc_custom_1620741191362{padding-top: 0px !important;}.vc_custom_1670409164542{margin-bottom: 3vh !important;}.vc_custom_1670409020025{margin-bottom: 3vh !important;}.vc_custom_1670409135425{margin-bottom: 3vh !important;}.wd-rs-63906bc070edd.wd-list{--li-mb: 15px;}.wd-rs-63906b2d8d084.wd-list{--li-mb: 15px;}.wd-rs-63906bdbba6a8.wd-list{--li-mb: 15px;}#wd-63906b2d8d084 li:hover{color:#4e4e4e;}#wd-63906bdbba6a8 li:hover{color:#4e4e4e;}</style>
+			<p></p>
+			<div data-vc-full-width="true" data-vc-full-width-init="true" class="vc_row wpb_row vc_row-fluid vc_custom_1623155496128 vc_row-has-fill" style="position: relative; center: -486.006px; box-sizing: border-box; padding-left: 486.006px; padding-right: 486.00px; width="100%" ">
+				<div class="wpb_column vc_column_container vc_col-sm-12">
+					<div class="vc_column-inner vc_custom_1620737428908"><div class="wpb_wrapper">
+						<div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1623155585932 vc_row-has-fill">
+							<div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-4 vc_col-md-5 vc_col-xs-12">
+								<div class="vc_column-inner vc_custom_1620741201657">
+									<div class="wpb_wrapper">
+		<div id="wd-63906bc9e7e4b" class="title-wrapper wd-wpb set-mb-s reset-last-child  wd-rs-63906bc9e7e4b wd-title-color-default wd-title-style-default text-center vc_custom_1670409164542 wd-underline-colored">
+			<h2 align="center">Contact Us</h2>
+    <p style="font-size: 24px;" align="center">Email or Phone us with any questions, comments, or concerns!</p>
+    <p style="font-size: 20px;" align="center">Email: avadhootsainm@gmail.com</p>
+    <p style="font-size: 20px;" align="center">Phone: 988-471-0828</p>
+			
+		</div></div></div></div></div></div></div></div><div class="vc_row-full-width vc_clearfix"></div><p></p>
+					</div>
+        <br>
+			<div class="copyrights-wrapper copyrights-two-columns">
+					<div class="container">
+						<div class="min-footer">
+							<div class="col-left set-cont-mb-s reset-last-child">
+																	<small><a href="https://akv-h20.github.io/Avadoot-Sai-Baba-Temple/index.html"><strong>Shri Shirdi Avadhoot Sai Baba Spiritual Trust</strong></a> <i class="fa fa-copyright"></i>  2026 BUILT BY <a href="https://akv-h20.github.io/Avadoot-Sai-Baba-Temple/index.html"><strong>AKV-H20</strong></a>															</small></div>
+			<br>
+<br>
     </div> 
+        <script> function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+        </script>
 
-    <script> 
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
-        }
-    </script>
+
+</div></div>
+			<br>
+    </div> 
+        <script> function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+        </script>
 </body>
 </html>
