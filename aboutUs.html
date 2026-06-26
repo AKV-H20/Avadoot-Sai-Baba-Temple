@@ -87,7 +87,13 @@
             100% { transform: translateX(-100%); }
         }
 
-        
+        /* Main structure layout */
+        .main-content-wrapper {
+            padding: 0 16px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
         .bio-container {
             display: flex;
             align-items: center;
@@ -124,15 +130,30 @@
             display: block;
         }
 
+        /* Contact Us layout spanning full screen on computer */
+        .full-width-footer {
+            background-color: white;
+            width: 100vw;
+            position: relative;
+            left: 50%;
+            right: 50%;
+            margin-left: -50vw;
+            margin-right: -50vw;
+            box-sizing: border-box;
+            padding: 40px 16px;
+            margin-top: 60px;
+            text-align: center;
+        }
+
         /* Mobile Adjustments */
         @media screen and (max-width: 768px) {
             .bio-container {
-                flex-direction: column; /* Stack image and text vertically on small screens */
+                flex-direction: column; 
                 gap: 20px;
                 text-align: center;
             }
             .bio-container:nth-of-type(2) {
-                flex-direction: column-reverse; /* Keeps image above text even on the alternating block */
+                flex-direction: column-reverse; 
             }
             .bio-text {
                 font-size: 16px;
@@ -140,6 +161,16 @@
             }
             .temple-main-img {
                 width: 90%;
+            }
+            .full-width-footer {
+                width: auto;
+                left: auto;
+                right: auto;
+                margin-left: 0;
+                margin-right: 0;
+                border-radius: 8px;
+                padding: 25px 16px;
+                margin-top: 40px;
             }
         }
     </style>
@@ -161,7 +192,8 @@
         </span>
     </div>
     
-    <div style="padding: 0 16px; max-width: 1100px; margin: 0 auto;">
+    <!-- Wrapped inside a global element to keep center profiles neatly aligned -->
+    <div class="main-content-wrapper">
         <br>
         <div style="text-align: center;"> 
             <h1 style="font-size: 2.5em; margin-bottom: 10px;">About Us</h1>
@@ -193,28 +225,23 @@
             </div>
         </div>
 
-      <div class="container main-footer" style="background-color: white; padding: 20px; margin-top: 20px; border-radius: 8px;">
-            <div style="text-align: center;">
-                <h2>Contact Us</h2>
-                <p style="font-size: 18px;">Email or Phone us with any questions, comments, or concerns!</p>
-                <p style="font-size: 16px;"><strong>Email:</strong> avadhootsainm@gmail.com</p>
-                <p style="font-size: 16px;"><strong>Phone:</strong> 988-471-0828</p>
-            </div>
+        <!-- FULL WIDTH FOOTER SECTION FOR COMPUTERS -->
+        <div class="full-width-footer">
+            <h2>Contact Us</h2>
+            <p style="font-size: 18px;">Email or Phone us with any questions, comments, or concerns.</p>
+            <p style="font-size: 16px;"><strong>Email:</strong> avadhootsainm@gmail.com</p>
+            <p style="font-size: 16px;"><strong>Phone:</strong> 988-471-0828</p>
         </div>
-        
+
         <br>
-        <div class="copyrights-wrapper" style="text-align: center; padding-bottom: 30px;">
+        <div class="copyrights-wrapper" style="text-align: center; padding-bottom: 20px;">
             <small>
-                <a href="https://akv-h20.github.io/Avadoot-Sai-Baba-Temple/index.html" style="color: black; text-decoration: none;">
-                    <strong>Shri Shirdi Avadhoot Sai Baba Spiritual Trust</strong>
-                </a> 
+                <a href="https://akv-h20.github.io/Avadoot-Sai-Baba-Temple/index.html" style="color: black; text-decoration: none;"><strong>Shri Shirdi Avadhoot Sai Baba Spiritual Trust</strong></a> 
                 <i class="fa fa-copyright"></i> 2026 BUILT BY 
-                <a href="https://akv-h20.github.io/Avadoot-Sai-Baba-Temple/index.html" style="color: black; text-decoration: none;">
-                    <strong>AKV-H20</strong>
-                </a>                                                            
+                <a href="https://akv-h20.github.io/Avadoot-Sai-Baba-Temple/index.html" style="color: black; text-decoration: none;"><strong>AKV-H20</strong></a>
             </small>
         </div>
-    </div> 
+    </div>
 
     <script> 
         function myFunction() {
