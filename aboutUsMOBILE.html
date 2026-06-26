@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Programs&Events - Avadhoot Sai Baba Temple</title>
+    <title>About Us - Avadhoot Sai Baba Temple</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         body {
@@ -10,11 +11,12 @@
             font-family: Arial, Helvetica, sans-serif;
             background-color: #FFCC99;
         }
+
         .topnav {
             overflow: hidden;
             background-color: #de5656;
         }
-
+        
         .topnav a {
             float: left;
             display: block;
@@ -22,7 +24,7 @@
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
-            font-size: 20px; /* Sized down slightly for elegant mobile text fitting */
+            font-size: 20px;
         }
 
         .topnav a:hover {
@@ -39,7 +41,7 @@
             display: none;
         }
 
-        /* FIXED: Swapped typo brace for parenthesis */
+        /* Responsive Navigation Hamburger Menu */
         @media screen and (max-width: 600px) {
             .topnav a:not(:first-child) { display: none; }
             .topnav a.icon {
@@ -71,7 +73,8 @@
             position: relative;
             background-color: #B0E0E6;
             font-family: 'Roboto', sans-serif;
-            font-size: 20px; /* Reduced to look proportions-accurate on mobile screens */
+            font-size: 20px;
+            color: black;
             padding: 10px 0;
         }
         .marquee span {
@@ -83,23 +86,7 @@
             0% { transform: translateX(0%); }
             100% { transform: translateX(-100%); }
         }
-        
-        .content-padding {
-            padding: 0 16px;
-        }
-        
-        .responsive-img {
-            width: 50%;
-            max-width: 100%;
-            height: auto;
-        }
-        
-        @media screen and (max-width: 600px) {
-            .responsive-img {
-                width: 92%; /* Expands size dynamically so you don't need magnifying glasses on smaller screens */
-            }
-        }
-      
+
         /* Main structure layout */
         .main-content-wrapper {
             padding: 0 16px;
@@ -143,7 +130,7 @@
             display: block;
         }
 
-        /* Contact Us layout spanning full screen on computer */
+        /* Contact Us layout matching Programs & Events style but full-screen on desktop */
         .full-width-footer {
             background-color: white;
             width: 100vw;
@@ -153,9 +140,16 @@
             margin-left: -50vw;
             margin-right: -50vw;
             box-sizing: border-box;
-            padding: 40px 16px;
-            margin-top: 60px;
+            padding: 20px; /* Matched to Programs & Events wrapper padding */
+            margin-top: 20px;
             text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        /* Container element inside the footer to match structure layout */
+        .footer-inner-content {
+            max-width: 800px;
+            margin: 0 auto;
         }
 
         /* Mobile Adjustments */
@@ -182,8 +176,8 @@
                 margin-left: 0;
                 margin-right: 0;
                 border-radius: 8px;
-                padding: 25px 16px;
-                margin-top: 40px;
+                padding: 20px;
+                margin-top: 20px;
             }
         }
     </style>
@@ -205,7 +199,6 @@
         </span>
     </div>
     
-    <!-- Wrapped inside a global element to keep center profiles neatly aligned -->
     <div class="main-content-wrapper">
         <br>
         <div style="text-align: center;"> 
@@ -237,31 +230,26 @@
                 <p>அனைவரிடமும் அன்பு, சமத்துவம் மற்றும் சுயநலமற்ற சேவை ஆகிய கொள்கைகளின் அடிப்படையில், நந்தியம்பாக்கத்தில் உள்ள அவதூத் சாய்பாபா கோயில், திருமதி புவனேஸ்வரி மற்றும் அவரது மறைந்த கணவர் ஸ்ரீ வெங்கடசுப்பிரமணியன் ஆகியோரின் ஆழ்ந்த ஆன்மீக பக்தி மற்றும் தொலைநோக்குப் பார்வையால் உருவாக்கப்பட்டது. பிறருக்கு உதவ வேண்டும் என்ற வாழ்நாள் விருப்பத்தினாலும், ஷீரடி சாய்பாபாவின் அமைதிச் செய்தியைப் பரப்ப வேண்டும் என்ற உன்னத அழைப்பினாலும் உந்தப்பட்டு, திருமதி புவனேஸ்வரி இக்கோயிலை அமைப்பதற்கான நிலத்தையும் தங்கள் சேமிப்புப் பணத்தையும் தாராளமாக வழங்கினார். பல ஆண்டுகளுக்கு முன்பே, ஒரு மகான் இந்த இடத்தில் ஒரு நாள் சாய்பாபா கோயில் அமையும் என்று கணித்திருந்ததாக அப்பகுதி மக்கள் கூறுகின்றனர்; இன்று, பாபாவின் தெய்வீக விருப்பத்தை நிறைவேற்றத் தேர்ந்தெடுக்கப்பட்ட கருவியாகத் திருமதி புவனேஸ்வரி திகழ்ந்தார் என்று பரவலாக நம்பப்படுகிறது. பாபாவின் ஆசியுடனும், குடும்பத்தினர், நண்பர்கள் மற்றும் அறிமுகம் இல்லாத நல்லுள்ளங்களின் மனப்பூர்வமான நன்கொடைகள் மற்றும் உள்ளூர் கிராம மக்களின் விலைமதிப்பற்ற ஆதரவுடனும், இக்கோயில் ஜூலை 2017-ல் வெற்றிகரமாக உருவாக்கப்பட்டது. தற்போது 'ஸ்ரீ ஷீரடி சாய் அவதூத் ஸ்பிரிச்சுவல் டிரஸ்ட்' (Shri Shirdi Sai Avadhoot Spiritual Trust) மூலம் நிர்வகிக்கப்படும் இக்கோயில், அனைவருக்கும் ஒரு வரவேற்புமிக்க ஆன்மீகத் தலமாகத் திகழ்கிறது; ஒட்டுமொத்த சமூகத்திற்கும் நேர்மறை எண்ணங்கள் மற்றும் ஒற்றுமையின் மையமாக இது விளங்குவதை உறுதிசெய்யும் வகையில், திருமதி புவனேஸ்வரி சென்னையிலிருந்தே இதன் அன்றாட செயல்பாடுகளைக் கண்காணித்து வருகிறார்.</p>
             </div>
         </div>
-  
-  <br><br>
-        
-        <div class="container main-footer" style="background-color: white; padding: 20px; margin-top: 20px; border-radius: 8px;">
-            <div style="text-align: center;">
+
+        <!-- CONTACT US SECTION STYLED TO MATCH PROGRAMS & EVENTS -->
+        <div class="full-width-footer">
+            <div class="footer-inner-content">
                 <h2>Contact Us</h2>
                 <p style="font-size: 18px;">Email or Phone us with any questions, comments, or concerns!</p>
                 <p style="font-size: 16px;"><strong>Email:</strong> avadhootsainm@gmail.com</p>
                 <p style="font-size: 16px;"><strong>Phone:</strong> 988-471-0828</p>
             </div>
         </div>
-        
+
         <br>
         <div class="copyrights-wrapper" style="text-align: center; padding-bottom: 30px;">
             <small>
-                <a href="https://akv-h20.github.io/Avadoot-Sai-Baba-Temple/index.html" style="color: black; text-decoration: none;">
-                    <strong>Shri Shirdi Avadhoot Sai Baba Spiritual Trust</strong>
-                </a> 
+                <a href="https://akv-h20.github.io/Avadoot-Sai-Baba-Temple/index.html" style="color: black; text-decoration: none;"><strong>Shri Shirdi Avadhoot Sai Baba Spiritual Trust</strong></a> 
                 <i class="fa fa-copyright"></i> 2026 BUILT BY 
-                <a href="https://akv-h20.github.io/Avadoot-Sai-Baba-Temple/index.html" style="color: black; text-decoration: none;">
-                    <strong>AKV-H20</strong>
-                </a>                                                            
+                <a href="https://akv-h20.github.io/Avadoot-Sai-Baba-Temple/index.html" style="color: black; text-decoration: none;"><strong>AKV-H20</strong></a>
             </small>
         </div>
-    </div> 
+    </div>
 
     <script> 
         function myFunction() {
