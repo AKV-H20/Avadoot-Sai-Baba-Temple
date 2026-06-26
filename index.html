@@ -39,7 +39,6 @@
             display: none;
         }
 
-        /* Fixed broken media query brace */
         @media screen and (max-width: 600px) {
             .topnav a:not(:first-child) { display: none; }
             .topnav a.icon {
@@ -91,7 +90,6 @@
             margin: 0 auto;
         }
 
-        /* Fluid sizing for visuals on mobile vs desktop */
         .responsive-banner {
             width: 95%;
             max-width: 600px;
@@ -116,7 +114,7 @@
         }
     </style>
 </head>
-<body>
+<body style="background-color: #FFCC99;">
     <div class="topnav" id="myTopnav">
         <a href="index.html" class="active">Home</a>
         <a href="aboutUs.html">About Us</a>
@@ -126,38 +124,30 @@
             <i class="fa fa-bars"></i>
         </a>
     </div>
-    
-    <div class="marquee">
-        <span>
-            Welcome to the Avadhoot Sai Baba Temple! You are invited to the Baba Prathishta Dinam Event on June 27th, 2026! Check out Temple Programs and Events for more information!
-        </span>
-    </div>
-    
-    <div class="content-padding">
+<div class="marquee">
+<span>
+Welcome to the Avadhoot Sai Baba Temple! You are invited to the Baba Prathishta Dinam Event on June 27th, 2026! Check out Temple Programs and Events for more information!
+</span>
+</div>
+    <div style="padding-left:16px">
         <br>
-        <div style="text-align: center;">
-            <img src="images/Banner(1).gif" alt="Banner with image of Sai" class="responsive-banner">
-        </div>
+    <center>
+        <img src="images/Banner(1).gif" alt="Banner with image of Sai" width="75%">
+    </center>
         <br>
-        
-        <h1 align="center">Address</h1>
-        <p class="address-text" style="font-size: 22px; text-align: center; margin-bottom: 5px;">Sri Vadivudayambal Nagar, Neithavayal, Tamil Nadu 601203, India</p>
-        <p style="font-size: 16px; text-align: center; font-weight: bold; color: #555;">(Click photo below for map directions)</p>
-        
-        <div style="text-align: center;">
-            <a href="https://www.google.com/maps/place/77JJ%2B5MQ,+Neithavayal,+Tamil+Nadu,+India/@13.2808279,80.2734745,15.59z/data=!4m9!1m2!2m1!1s77JJ%2B5MQ,+Taluk,+Sri+Vadivudayambal+Nagar,+Neithavayal,+Tamil+Nadu+601203,+India!3m5!1s0x3a52775c94564f19:0x85e5c03d5aa5e93!8m2!3d13.2804625!4d80.2817344!15sClA3N0pKKzVNUSwgVGFsdWssIFNyaSBWYWRpdnVkYXlhbWJhbCBOYWdhciwgTmVpdGhhdmF5YWwsIFRhbWlsIE5hZHUgNjAxMjAzLCBJbmRpYZIBEGdlb2NvZGVkX2FkZHJlc3PgAQA?entry=ttu&g_ep=EgoyMDI2MDYxNi4wIKXMDSoASAFQAw%3D%3D" target="_blank">
-                <img src="images/google_maps_location" alt="Map Grid Location" class="responsive-map">
-            </a>
-        </div>
-        
-        <br>
-        <h1 align="center">Hours</h1>
-        <div style="text-align: center;">
-            <img src="images/Hours.png" alt="Open Monday to Sunday 6 AM - 11 AM and 5 PM - 7 PM. Aarti at 6 AM, 11 AM, and 6 PM" class="responsive-hours">
-        </div>
-        <br><br>
-        
-        <!-- Simplified Responsive Footer Wrapper -->
+    <h1 align="center">Address</h1>
+    <p style="font-size: 24px;" align="center">Sri Vadivudayambal Nagar, Neithavayal, Tamil Nadu 601203, India</p>
+    <strong><p style="font-size: 20px;" align="center">click photo to link to directions.</p></strong>
+<center>
+    <a href="https://www.google.com/maps/place/77JJ%2B5MQ,+Neithavayal,+Tamil+Nadu,+India/@13.2808279,80.2734745,15.59z/data=!4m9!1m2!2m1!1s77JJ%2B5MQ,+Taluk,+Sri+Vadivudayambal+Nagar,+Neithavayal,+Tamil+Nadu+601203,+India!3m5!1s0x3a52775c94564f19:0x85e5c03d5aa5e93!8m2!3d13.2804625!4d80.2817344!15sClA3N0pKKzVNUSwgVGFsdWssIFNyaSBWYWRpdnVkYXlhbWJhbCBOYWdhciwgTmVpdGhhdmF5YWwsIFRhbWlsIE5hZHUgNjAxMjAzLCBJbmRpYZIBEGdlb2NvZGVkX2FkZHJlc3PgAQA?entry=ttu&g_ep=EgoyMDI2MDYxNi4wIKXMDSoASAFQAw%3D%3D"><img src="images/google_maps_location" alt="Google Map Location: 77JJ+5MQ, Taluk, Sri Vadivudayambal Nagar, Neithavayal, Tamil Nadu 601203, India" width="50%"></a>
+    </center>
+<br>
+    <h1 align="center">Hours</h1>
+    <center>
+        <img src="images/Hours.png" alt="Open Monday to Sunday 6 AM - 11 AM and 5 PM - 7 PM. Aarti at 6 AM, 11 AM, and 6 PM" width="40%">
+    </center>
+    <br>
+    <br>
         <div class="container main-footer" style="background-color: white; padding: 20px; margin-top: 20px; border-radius: 8px;">
             <div style="text-align: center;">
                 <h2>Contact Us</h2>
@@ -179,6 +169,11 @@
                 </a>                                                            
             </small>
         </div>
+    </div> 
+<br>
+
+<br>
+
     </div> 
 
     <script> 
