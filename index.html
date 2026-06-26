@@ -39,6 +39,7 @@
             display: none;
         }
 
+        /* Responsive Navigation Hamburger Menu */
         @media screen and (max-width: 600px) {
             .topnav a:not(:first-child) { display: none; }
             .topnav a.icon {
@@ -86,35 +87,73 @@
 
         .content-padding {
             padding: 0 16px;
+            max-width: 1100px; /* Increased to allow wider layout layout for bigger images */
+            margin: 0 auto;
+        }
+
+        /* Scaled up image dimensions for optimal clarity */
+        .responsive-banner {
+            width: 100%;
+            max-width: 900px; /* Increased from 600px */
+            height: auto;
+            border-radius: 6px;
+        }
+        .responsive-map {
+            width: 100%;
+            max-width: 650px; /* Increased from 400px */
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease-in-out;
+        }
+        .responsive-map:hover {
+            transform: scale(1.01);
+        }
+        .responsive-hours {
+            width: 100%;
+            max-width: 550px; /* Increased from 320px */
+            height: auto;
+        }
+
+        /* Contact Us layout matching Programs & Events style but full-screen on desktop */
+        .full-width-footer {
+            background-color: white;
+            width: 100vw;
+            position: relative;
+            left: 50%;
+            right: 50%;
+            margin-left: -50vw;
+            margin-right: -50vw;
+            box-sizing: border-box;
+            padding: 20px; /* Matched to Programs & Events wrapper padding */
+            margin-top: 40px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        /* Container element inside the footer to match structure layout */
+        .footer-inner-content {
             max-width: 800px;
             margin: 0 auto;
         }
 
-        .responsive-banner {
-            width: 95%;
-            max-width: 600px;
-            height: auto;
-            border-radius: 4px;
-        }
-        .responsive-map {
-            width: 90%;
-            max-width: 400px;
-            height: auto;
-            border-radius: 8px;
-        }
-        .responsive-hours {
-            width: 85%;
-            max-width: 320px;
-            height: auto;
-        }
-
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: 768px) {
             h1 { font-size: 28px; }
             .address-text { font-size: 18px !important; }
+            .full-width-footer {
+                width: auto;
+                left: auto;
+                right: auto;
+                margin-left: 0;
+                margin-right: 0;
+                border-radius: 8px;
+                padding: 20px;
+                margin-top: 30px;
+            }
         }
     </style>
 </head>
-<body style="background-color: #FFCC99;">
+    <body style="background-color: #FFCC99;">
     <div class="topnav" id="myTopnav">
         <a href="index.html" class="active">Home</a>
         <a href="aboutUs.html">About Us</a>
@@ -144,12 +183,12 @@ Welcome to the Avadhoot Sai Baba Temple! You are invited to the Baba Prathishta 
 <br>
     <h1 align="center">Hours</h1>
     <center>
-        <img src="images/Hours.png" alt="Open Monday to Sunday 6 AM - 11 AM and 5 PM - 7 PM. Aarti at 6 AM, 11 AM, and 6 PM" width="40%">
+        <img src="images/Hours.png" alt="Open Monday to Sunday 6 AM - 11 AM and 5 PM - 7 PM. Aarti at 6 AM, 11 AM, and 6 PM" width="65%">
     </center>
     <br>
     <br>
-        <div class="container main-footer" style="background-color: white; padding: 20px; margin-top: 20px; border-radius: 8px;">
-            <div style="text-align: center;">
+          <div class="full-width-footer">
+            <div class="footer-inner-content">
                 <h2>Contact Us</h2>
                 <p style="font-size: 18px;">Email or Phone us with any questions, comments, or concerns!</p>
                 <p style="font-size: 16px;"><strong>Email:</strong> avadhootsainm@gmail.com</p>
@@ -160,18 +199,13 @@ Welcome to the Avadhoot Sai Baba Temple! You are invited to the Baba Prathishta 
         <br>
         <div class="copyrights-wrapper" style="text-align: center; padding-bottom: 30px;">
             <small>
-                <a href="https://akv-h20.github.io/Avadoot-Sai-Baba-Temple/index.html" style="color: black; text-decoration: none;">
-                    <strong>Shri Shirdi Avadhoot Sai Baba Spiritual Trust</strong>
-                </a> 
+                <a href="https://akv-h20.github.io/Avadoot-Sai-Baba-Temple/index.html" style="color: black; text-decoration: none;"><strong>Shri Shirdi Avadhoot Sai Baba Spiritual Trust</strong></a> 
                 <i class="fa fa-copyright"></i> 2026 BUILT BY 
-                <a href="https://akv-h20.github.io/Avadoot-Sai-Baba-Temple/index.html" style="color: black; text-decoration: none;">
-                    <strong>AKV-H20</strong>
-                </a>                                                            
+                <a href="https://akv-h20.github.io/Avadoot-Sai-Baba-Temple/index.html" style="color: black; text-decoration: none;"><strong>AKV-H20</strong></a>
             </small>
         </div>
     </div> 
 <br>
-
 <br>
 
     </div> 
