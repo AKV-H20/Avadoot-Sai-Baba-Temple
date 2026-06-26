@@ -130,7 +130,7 @@
             display: block;
         }
 
-        /* Contact Us layout spanning full screen on computer */
+        /* Contact Us layout matching Programs & Events style but full-screen on desktop */
         .full-width-footer {
             background-color: white;
             width: 100vw;
@@ -140,9 +140,16 @@
             margin-left: -50vw;
             margin-right: -50vw;
             box-sizing: border-box;
-            padding: 40px 16px;
-            margin-top: 60px;
+            padding: 20px; /* Matched to Programs & Events wrapper padding */
+            margin-top: 20px;
             text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        /* Container element inside the footer to match structure layout */
+        .footer-inner-content {
+            max-width: 800px;
+            margin: 0 auto;
         }
 
         /* Mobile Adjustments */
@@ -169,8 +176,8 @@
                 margin-left: 0;
                 margin-right: 0;
                 border-radius: 8px;
-                padding: 25px 16px;
-                margin-top: 40px;
+                padding: 20px;
+                margin-top: 20px;
             }
         }
     </style>
@@ -192,7 +199,6 @@
         </span>
     </div>
     
-    <!-- Wrapped inside a global element to keep center profiles neatly aligned -->
     <div class="main-content-wrapper">
         <br>
         <div style="text-align: center;"> 
@@ -225,16 +231,18 @@
             </div>
         </div>
 
-        <!-- FULL WIDTH FOOTER SECTION FOR COMPUTERS -->
+        <!-- CONTACT US SECTION STYLED TO MATCH PROGRAMS & EVENTS -->
         <div class="full-width-footer">
-            <h2>Contact Us</h2>
-            <p style="font-size: 18px;">Email or Phone us with any questions, comments, or concerns.</p>
-            <p style="font-size: 16px;"><strong>Email:</strong> avadhootsainm@gmail.com</p>
-            <p style="font-size: 16px;"><strong>Phone:</strong> 988-471-0828</p>
+            <div class="footer-inner-content">
+                <h2>Contact Us</h2>
+                <p style="font-size: 18px;">Email or Phone us with any questions, comments, or concerns!</p>
+                <p style="font-size: 16px;"><strong>Email:</strong> avadhootsainm@gmail.com</p>
+                <p style="font-size: 16px;"><strong>Phone:</strong> 988-471-0828</p>
+            </div>
         </div>
 
         <br>
-        <div class="copyrights-wrapper" style="text-align: center; padding-bottom: 20px;">
+        <div class="copyrights-wrapper" style="text-align: center; padding-bottom: 30px;">
             <small>
                 <a href="https://akv-h20.github.io/Avadoot-Sai-Baba-Temple/index.html" style="color: black; text-decoration: none;"><strong>Shri Shirdi Avadhoot Sai Baba Spiritual Trust</strong></a> 
                 <i class="fa fa-copyright"></i> 2026 BUILT BY 
